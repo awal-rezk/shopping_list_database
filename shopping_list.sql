@@ -17,7 +17,7 @@ INSERT INTO targetList(generic_product_name, specific_product, brand) VALUES('Ja
 INSERT INTO targetList(generic_product_name, specific_product, brand) VALUES('Tea', 'Black Decaffeinated', 'Lipton');
 
 -- Attribute "specific_product" was declared with a VARCHAR with a length that is too short
--- Therefore, increase maximum length of string from 15 characters to 20 characters
+-- Therefore, increase maximum length of VARCHAR from 15 characters to 20 characters
 ALTER TABLE targetList
 MODIFY COLUMN specific_product VARCHAR(20);
 
